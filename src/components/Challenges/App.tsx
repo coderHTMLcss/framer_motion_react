@@ -16,7 +16,19 @@
 // import ColorChangeSquare from "./Keyframes/components/ColorChangeSquare"
 // import SlidingText from "./Keyframes/components/SlidingText":
 // import WaveEffect from "./Keyframes/components/WaveEffect";
-import SlidingMenu from "./Variants/components/SlidingMenu"
+// import SlidingMenu from "./Variants/components/SlidingMenu";
+// import Tooltip from "./Variants/components/Tooltip";
+import { ThemeProvider } from "../../shared/useTheme";
+// import StaggeredList from "./Stagger Animation/components/StaggeredList";
+import StaggeredTextReveal from "./Stagger Animation/components/StaggeredTextReveal";
+// import GestureBasedImageGallery from "./Gestures/components/GestureBasedImageGallery";
+// import LongPressToChangeSize from "./Gestures/components/LongPressToChangeSize";
+// import TapToChangeColor from "./Gestures/components/TapToChangeColor";
+// import RotateOnDrag from "./Gestures/components/RotateOnDrag";
+// import DynamicList from "./Variants/components/DynamicList";
+// import ToggleSwitch from "./Variants/components/ToggleSwitch";
+// import SwipeableCard from "./Gestures/components/SwipeableCard";
+// import DraggableBox from "./Gestures/components/DraggableBox";
 
 
 
@@ -24,10 +36,12 @@ import SlidingMenu from "./Variants/components/SlidingMenu"
 
 const App = () => {
     return (
-        <section className="h-screen flex justify-center items-center bg-[#0d1017]">
-            <SlidingMenu />
-        </section>
+        <ThemeProvider>
+            <section className="h-screen flex justify-center items-center bg-[#0d1017]">
+                <StaggeredTextReveal />
+            </section>
+        </ThemeProvider>
     )
 }
 
-export default App
+export default App;
