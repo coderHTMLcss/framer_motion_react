@@ -1,5 +1,7 @@
 // import Carousel from "./Projects/Carousel/components/Carousel";
-import Sidebar from "./Projects/Sidebar/components/Sidebar"
+// import ScrollCarousel from "./Projects/Horizontal Scroll/components/ScrollCarousel";
+import StickyNav from "./Projects/Sticky Navbar/StickyNav"
+// import Sidebar from "./Projects/Sidebar/components/Sidebar"
 // import DraggableCard from "./Projects/Draggable Card/components/DraggableCard";
 // import Loader from "./Projects/Loader/components/Loader";
 // import ScrollIndicator from "./Projects/Scroll Indicator/components/ScrollIndicator";
@@ -37,9 +39,12 @@ const App = () => {
         <Carousel />
       </div> */}
 
-      <div className="flex justify-center items-center h-screen w-full bg-gray-950">
+      {/* <div className="flex justify-center items-center h-screen w-full bg-gray-950">
         <Sidebar />
-      </div>
+      </div> */}
+
+      {/* <ScrollCarousel /> */}
+      <StickyNav />
     </>
   )
 }
